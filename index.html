@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      canvas{ border: 1px solid black;}
+      .button {
+        border-width: 1px;
+        border-color: black;
+        font-size: 16px;
+        padding: 15px 32px;
+        text-align: center;
+      }
+      .b1 {
+        background-color: green;
+      }
+      .b2 {
+        background-color: red;
+      }
+      .b3 {
+        background-color: orange;
+      }
+      .b4{
+        background-color: purple;
+      }
+      p{
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="400" height="400"></canvas><br>
+    <button type="button" name="button" id="button" onclick="addBall()" class="button b1">Add</button>
+    <button type="button" name="button" onclick="removeBall()" class="button b2">Remove</button>
+    <button type="button" name="button" onclick="clearBalls()" class="button b3">Clear</button>
+    <button type="button" onclick="moving()" class="button b4" name="button">Start/Stop</button>
+    <br>
+    <p id="pp">Start</p>
+    <p id="balls">0</p>
+    <script type="text/javascript" src="indexx.js"></script>
+  </body>
+</html>
