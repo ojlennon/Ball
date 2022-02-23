@@ -34,10 +34,10 @@ class Ball {
     ctx.fill();
     ctx.closePath();
     if (this.x + this.rad >= canvas.width || this.x - this.rad <= 0) {
-      this.xV *= -1.5;
+      this.xV *= -1;
     }
     if (this.y + this.rad >= canvas.height || this.y - this.rad <= 0) {
-      this.yV *= -1.5;
+      this.yV *= -1;
     }
   }
 }
